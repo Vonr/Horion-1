@@ -15,7 +15,7 @@ jobs:
 
     - name: MSBuild
       working-directory: src
-      run: msbuild /p:Configuration=Release /p:Platform=x64
+      run: msbuild Horion.sln /p:Configuration=Release /p:Platform=x64
       
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
